@@ -44,7 +44,6 @@ namespace PTest1022 {
 
 
 
-
             /*** ●●●●● ここまで ●●●●● ***/
             Console.WriteLine($"〇問題２：{data}\n");
         }
