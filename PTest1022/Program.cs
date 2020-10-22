@@ -21,7 +21,7 @@ namespace PTest1022 {
             //６以上…「６以上です」
 
             /*** ●●● ここへ解答を入力 ●●● ***/
-            
+
 
 
 
@@ -73,7 +73,6 @@ namespace PTest1022 {
 
 
 
-
             /*** ●●●●● ここまで ●●●●● ***/
             //nullの場合は何も出力されません
             Console.WriteLine($"〇問題３：{title}");
@@ -83,19 +82,19 @@ namespace PTest1022 {
         private void Exam_4() {
             Console.WriteLine($"\n〇問題４");
             var books = new Books().GetBooks();
-            int pageSum = 0;
+            //int pageSum = 0;
 
             //金額が1200円以上の書籍を抽出せよ
             //出力については「タイトル」と「金額」を出力すること
-            
-            /*** ●●● ここへ解答を入力 ●●● ***/
 
+            /*** ●●● ここへ解答を入力 ●●● ***/
+            Console.WriteLine($"金額が1200円以上の書籍：{books.Count(x => x.Price >= 1200)}");
 
 
 
 
             /*** ●●●●● ここまで ●●●●● ***/
-            Console.WriteLine($"ページの合計は{ pageSum }ページです。");
+            //Console.WriteLine($"ページの合計は{ pageSum }ページです。");
         }
 
         //問題５
@@ -107,7 +106,7 @@ namespace PTest1022 {
             //出力については「タイトル」と「ページ数」を出力すること
 
             /*** ●●● ここへ解答を入力 ●●● ***/
-
+            Console.WriteLine($"タイトルに「物語」が入っている作品：{books.Count(x => x.Title.Contains("物語"))}");
 
 
 
@@ -140,7 +139,7 @@ namespace PTest1022 {
             /*** ●●● ここへ解答を入力 ●●● ***/
 
 
-
+            avg = numbers.Average();
 
 
 
